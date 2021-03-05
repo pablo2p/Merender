@@ -13,10 +13,14 @@
   box-sizing: border-box;
 }
 
+main {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background: var(--amarelo);
-  overflow-x: hidden;
 }
 
 section {
@@ -594,11 +598,11 @@ footer div:nth-child(2) a + a {
     flex-direction: column;
     height: auto;
     width: 90vw;
-    margin-top: -16vh;
+    margin-top: -17vh;
   }
 
   section:nth-child(3) > div:nth-child(1) span + img {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   section:nth-child(3) > div:nth-child(1) span:first-child {
@@ -618,6 +622,7 @@ footer div:nth-child(2) a + a {
   section:nth-child(3) > div:nth-child(2) div {
     order: 1;
     padding: 0 25px;
+    margin-top: 15px;
   }
 
   section:nth-child(3) > div:nth-child(2) img {
@@ -625,11 +630,11 @@ footer div:nth-child(2) a + a {
   }
 
   section:nth-child(3) > div:nth-child(2) div p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   section:nth-child(3) > div:nth-child(2) div strong {
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin-bottom: 12px;
   }
 
@@ -639,13 +644,23 @@ footer div:nth-child(2) a + a {
   }
 
   section:nth-child(4) > div div {
-    width: 35vw;
+    width: inherit;
     height: inherit;
+    max-width: 150px;
+  }
+
+  section:nth-child(4) > div div + div {
+    margin-top: 10px;
   }
 
   section:nth-child(4) > div div:nth-child(2),
   section:nth-child(4) > div div:nth-child(4) {
-    margin-top: 80px;
+    margin-top: 10px;
+  }
+
+  section:nth-child(4) > div div img {
+    max-width: 120px;
+    width: 11vw;
   }
 
   section:nth-child(4) button {
@@ -654,13 +669,26 @@ footer div:nth-child(2) a + a {
 
   section:nth-child(5) > div > p {
     margin-top: 4vh;
-    font-size: 3rem;
+    font-size: 2.4rem;
     padding: 0 25px;
   }
 
   section:nth-child(5) > div > div {
     flex-direction: column;
     padding: 0 30px;
+    margin-top: 30px;
+  }
+
+  section:nth-child(5) > div > div > div strong {
+    font-size: 18px;
+  }
+
+  section:nth-child(5) > div > div > div p {
+    font-size: 14px;
+  }
+
+  section:nth-child(5) > div > div > div ul li div h6 {
+    font-size: 14px;
   }
 
   section:nth-child(5) > div > div > div ul {
@@ -682,7 +710,7 @@ footer div:nth-child(2) a + a {
   section:nth-child(6) > div > strong {
     margin-top: 38px;
     font-size: 3.5rem;
-    padding: 0 65px;
+    padding: 0 30px;
   }
 
   section:nth-child(6) > div > div {
@@ -691,13 +719,13 @@ footer div:nth-child(2) a + a {
   }
 
   section:nth-child(6) > div > div > div {
-    padding: 0 65px;
+    padding: 0 30px;
     max-width: 100%;
   }
 
   section:nth-child(6) > div > div ul {
     order: 1;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 0 25px;
   }
 
@@ -705,6 +733,16 @@ footer div:nth-child(2) a + a {
     background: #f9f9f9;
     border-radius: 20px;
     padding: 20px;
+    width: unset;
+  }
+
+  section:nth-child(6) > div > div > div p {
+    font-size: 14px;
+    margin-top: 20px;
+    white-space: pre;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   section:nth-child(6) > div > div ul li:first-child {
